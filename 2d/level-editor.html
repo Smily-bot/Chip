@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="css/editor.css">
+<nav class="navbar navbar-expand-sm bg-light">
+<div class="container-fluid">
+<button type="button" class="button" onclick="savething();">save</button>
+<button type="button" class="button" onclick="reset();">reset</button>
+<button type="button" class="button" onclick="undw();">undo wall</button>
+<select name="fun" id="tools">
+  <option value="1">wall</option>
+  <option value="2">win pos</option>
+  <option value="3">lose pos</option>
+  <option value="4">spawn</option>
+</select>
+</div>
+</nav>
+<title>level editor</title>
+<meta charset="UTF-8">
+<meta name="description" content="best game ever">
+<meta name="keywords" content="bad, game, stickman, wall">
+<meta name="author" content="smilybot">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="js/jquery.js"> </script>
+<script src="js/anguler.js"></script>
+<script src="js/bootstrap.js"></script>
+</head>
+<body>
+<div class="container">
+<canvas id="game" width="800" height="600"></canvas>
+<textarea readonly class="ascii" id="out" type="output" style="width: 350px; height: 600px;"></textarea>
+<script src="js/engine.js"></script>
+<script src="js/editor.js"></script>
+</div>
+</body>
+</html>
